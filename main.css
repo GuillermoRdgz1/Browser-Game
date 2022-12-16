@@ -1,0 +1,11 @@
+.cover {
+    height: 56em;
+    width: 118em;
+    background-color: navy;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
