@@ -1,4 +1,5 @@
 const commenceButton = document.getElementById('start-btn')
+const nextButton = document.getElementById('next-btn')
 const coverElement = document.getElementById('question-cover')
 const questionElement = document.getElementById('question')
 const choicesElement = document.getElementById('choices')
@@ -16,6 +17,7 @@ function commenceGame() {
 }
 
 function nextQuestion() {
+    resetState()
     showQuestion(randomQuestions[currentQuestions])
 }
 
@@ -33,7 +35,15 @@ function showQuestion(question) {
     })
 }
 
-function selectResponse() {
+
+function resetState() {
+    nextQuestion.classList.add('hide')
+    while (choicesElement.firstChild) {
+        choicesElement.removeChild
+        (choicesElement.firstChild)
+    }
+}
+function selectResponse(e) {
 
 }
 
