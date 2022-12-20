@@ -7,6 +7,10 @@ const choicesElement = document.getElementById('choices')
 let randomQuestions, currentQuestions
 
 commenceButton.addEventListener('click', commenceGame)
+nextButton.addEventListener('click', () => {
+    currentQuestions++
+    nextQuestion()
+})
 
 function commenceGame() {
     console.log('Started')
@@ -38,6 +42,7 @@ function showQuestion(question) {
 
 
 function resetState() {
+    clearStatusClass(document.body)
     nextButton.classList.add('hide')
     while (choicesElement.firstChild) {
         choicesElement.removeChild
@@ -53,6 +58,12 @@ function selectResponse(e) {
         setStatusClass(button, button.dataset.correct)
 
     })
+    if (randomQuestions.length > currentQuestions + 1) {
+        nextButton.classList.remove('hide')
+    } else {
+        commenceButton.innerText = 'REDO'
+        commenceButton.classList.remove('hide')
+    }
 }
 
 function setStatusClass(element, correct) {
@@ -77,5 +88,29 @@ const questions = [
             { text: 'where', correct: false},
             { text: 'why', correct: true}
         ]
-    }
+    },
+    {
+        question: 'fdshgfdhfba?',
+        answers: [
+            { text: 'fdgs', correct: false},
+            { text: 'where', correct: false},
+            { text: 'dsfhh', correct: true}
+        ]
+    },
+    {
+        question: 'gamora?',
+        answers: [
+            { text: 'who', correct: false},
+            { text: 'sdfgsdfg', correct: false},
+            { text: 'why', correct: true}
+        ]
+    },
+    {
+        question: 'weatgrthh?',
+        answers: [
+            { text: 'sdfhgdhfsd', correct: false},
+            { text: 'where', correct: false},
+            { text: 'why', correct: true}
+        ]
+    },
 ]
