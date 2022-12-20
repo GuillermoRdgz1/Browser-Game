@@ -9,15 +9,16 @@ let randomQuestions, currentQuestions
 commenceButton.addEventListener('click', commenceGame)
 
 function commenceGame() {
+    console.log('Started')
     commenceButton.classList.add('hide')
     randomQuestions = questions.sort(() => Math.random() - .5)
     currentQuestions = 0
     coverElement.classList.remove('hide')
-    nextQuestion()
+    //nextQuestion()
 }
 
 function nextQuestion() {
-    resetState()
+    //resetState()
     showQuestion(randomQuestions[currentQuestions])
 }
 
@@ -37,14 +38,34 @@ function showQuestion(question) {
 
 
 function resetState() {
-    nextQuestion.classList.add('hide')
+    //nextQuestion.classList.add('hide')
     while (choicesElement.firstChild) {
         choicesElement.removeChild
         (choicesElement.firstChild)
     }
 }
 function selectResponse(e) {
+    const chosenButton = e.target
+    const correct = chosenButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(choicesElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
 
+    })
+}
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if(correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
 }
 
 const questions = [
