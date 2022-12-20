@@ -1,6 +1,6 @@
 const commenceButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
-const coverElement = document.getElementById('question-cover')
+const questionCoverElement = document.getElementById('question-cover')
 const questionElement = document.getElementById('question')
 const choicesElement = document.getElementById('choices')
 
@@ -13,12 +13,12 @@ function commenceGame() {
     commenceButton.classList.add('hide')
     randomQuestions = questions.sort(() => Math.random() - .5)
     currentQuestions = 0
-    coverElement.classList.remove('hide')
-    //nextQuestion()
+    questionCoverElement.classList.remove('hide')
+    nextQuestion()
 }
 
 function nextQuestion() {
-    //resetState()
+    resetState()
     showQuestion(randomQuestions[currentQuestions])
 }
 
@@ -38,12 +38,13 @@ function showQuestion(question) {
 
 
 function resetState() {
-    //nextQuestion.classList.add('hide')
+    nextButton.classList.add('hide')
     while (choicesElement.firstChild) {
         choicesElement.removeChild
         (choicesElement.firstChild)
     }
 }
+
 function selectResponse(e) {
     const chosenButton = e.target
     const correct = chosenButton.dataset.correct
