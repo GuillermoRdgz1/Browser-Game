@@ -1,11 +1,26 @@
-.cover {
-    height: 56em;
-    width: 118em;
-    background-color: navy;
-    border-radius: 5px;
-    padding: 10px;
-}
 
 .hide {
     display: none;
+}
+
+body {
+    margin: 2;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(151, 135, 122);
+    height: 50em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 10px ;
+    gap: 10px;
+}
+
+#question {
+    font-size: larger;
 }

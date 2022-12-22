@@ -86,7 +86,8 @@ const questions = [
         answers: [
             { text: 'who', correct: false},
             { text: 'where', correct: false},
-            { text: 'why', correct: true}
+            { text: 'why', correct: true},
+            { text: 'who', correct: false}
         ]
     },
     {
@@ -94,7 +95,8 @@ const questions = [
         answers: [
             { text: 'fdgs', correct: false},
             { text: 'where', correct: false},
-            { text: 'dsfhh', correct: true}
+            { text: 'dsfhh', correct: true},
+            { text: 'who', correct: false}
         ]
     },
     {
@@ -102,7 +104,8 @@ const questions = [
         answers: [
             { text: 'who', correct: false},
             { text: 'sdfgsdfg', correct: false},
-            { text: 'why', correct: true}
+            { text: 'why', correct: true},
+            { text: 'who', correct: false}
         ]
     },
     {
@@ -110,7 +113,8 @@ const questions = [
         answers: [
             { text: 'sdfhgdhfsd', correct: false},
             { text: 'where', correct: false},
-            { text: 'why', correct: true}
+            { text: 'why', correct: true},
+            { text: 'who', correct: false}
         ]
     },
 ]
