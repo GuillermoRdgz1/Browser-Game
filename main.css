@@ -1,5 +1,6 @@
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow Bold', sans-serif;
+    cursor: crosshair;
 }
 
 .hide {
@@ -40,6 +41,7 @@ body {
 .btn {
     font-size: x-large;
     align-items: center;
+    border: 3px dotted black ;
 }
 
 .start-btn {
@@ -49,7 +51,8 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 100px;
-  margin: 5px
+  margin: 5px;
+  border: 3px solid black;
 }
 
 .next-btn {
@@ -62,5 +65,6 @@ body {
   margin: 5px;
   height: auto;
   width: auto;
+  border: 2.5px solid black;
 
 }
