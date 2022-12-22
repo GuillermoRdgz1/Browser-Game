@@ -82,39 +82,39 @@ function clearStatusClass(element) {
 
 const questions = [
     {
-        question: 'gamora?',
+        question: 'In "Halloween", what year did Michael kill his sister?',
         answers: [
-            { text: 'who', correct: false},
-            { text: 'where', correct: false},
-            { text: 'why', correct: true},
-            { text: 'who', correct: false}
+            { text: '1977', correct: false},
+            { text: '1959', correct: false},
+            { text: '1963', correct: true},
+            { text: '1980', correct: false}
         ]
     },
     {
-        question: 'fdshgfdhfba?',
+        question: 'In "John Carpenters The Thing", what game is MacReady playing against a computer, near the beginning of the movie?',
         answers: [
-            { text: 'fdgs', correct: false},
-            { text: 'where', correct: false},
-            { text: 'dsfhh', correct: true},
-            { text: 'who', correct: false}
+            { text: 'Battleship', correct: false},
+            { text: 'Chess', correct: true},
+            { text: 'Poker', correct: false},
+            { text: 'Checkers', correct: false}
         ]
     },
     {
-        question: 'gamora?',
+        question: 'Who is the killer in "Sleepaway Camp"?',
         answers: [
-            { text: 'who', correct: false},
-            { text: 'sdfgsdfg', correct: false},
-            { text: 'why', correct: true},
-            { text: 'who', correct: false}
+            { text: 'Ricky', correct: false},
+            { text: 'Judy', correct: false},
+            { text: 'Ronnie', correct: false},
+            { text: 'Angela', correct: true}
         ]
     },
     {
-        question: 'weatgrthh?',
+        question: ' “Do you like scary movies?” is well known quote due to which film?',
         answers: [
-            { text: 'sdfhgdhfsd', correct: false},
-            { text: 'where', correct: false},
-            { text: 'why', correct: true},
-            { text: 'who', correct: false}
+            { text: 'Scream', correct: true},
+            { text: 'Halloween', correct: false},
+            { text: 'A Nightmare on Elm Streey', correct: false},
+            { text: 'Scary Movie', correct: false}
         ]
     },
 ]
