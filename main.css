@@ -1,3 +1,6 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow Bold', sans-serif;
+}
 
 .hide {
     display: none;
@@ -17,10 +20,44 @@ body {
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    margin: 10px ;
-    gap: 10px;
+    margin: 10px;
+    gap: 10px; 
 }
 
 #question {
-    font-size: larger;
+    font-size: xx-large;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+#choices {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+
+.btn {
+    font-size: large;
+}
+
+.start-btn {
+  border: none;
+  color: rgb(44, 43, 43);
+  padding: 25px, 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100px;
+  margin: 5px
+}
+
+.next-btn {
+  border: none;
+  color: rgb(128, 19, 19);
+  padding: 25px, 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 5px
+
 }
