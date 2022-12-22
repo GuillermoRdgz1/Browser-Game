@@ -113,7 +113,7 @@ const questions = [
         answers: [
             { text: 'Scream', correct: true},
             { text: 'Halloween', correct: false},
-            { text: 'A Nightmare on Elm Streey', correct: false},
+            { text: 'A Nightmare on Elm Street', correct: false},
             { text: 'Scary Movie', correct: false}
         ]
     },
