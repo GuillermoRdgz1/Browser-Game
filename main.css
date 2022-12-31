@@ -1,6 +1,5 @@
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow Bold', sans-serif;
-    cursor: crosshair;
 }
 
 .hide {
@@ -67,4 +66,16 @@ body {
   width: auto;
   border: 2.5px solid black;
 
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  margin: 0 auto;
+  padding: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: static;
+  top: 5em;
+  right: 10em;
 }
