@@ -79,3 +79,17 @@ td {
   top: 5em;
   right: 10em;
 }
+
+.btn:focus {
+  color: maroon;
+  border: 2px solid maroon;
+  box-shadow: maroon;
+}
+
+.correct {
+  background-color: cornflowerblue;
+}
+
+.wrong {
+  background-color: red;
+}
