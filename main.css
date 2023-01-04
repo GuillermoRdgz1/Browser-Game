@@ -1,5 +1,7 @@
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow Bold', sans-serif;
+    
+    
 }
 
 .hide {
@@ -29,12 +31,16 @@ body {
     text-align: center;
     margin: auto;
     padding: 0;
+    color: rgb(146, 140, 140);
+    text-shadow: 2.5px 0 rgb(146, 36, 36);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #choices {
   height: auto;
   width: auto;
   text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .btn {
@@ -52,6 +58,9 @@ body {
   font-size: 100px;
   margin: 5px;
   border: 3px solid black;
+  text-shadow: 1px 0 maroon;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(226, 226, 226);
 }
 
 .next-btn {
@@ -65,20 +74,10 @@ body {
   height: auto;
   width: auto;
   border: 2.5px solid black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
-table,
-th,
-td {
-  border: 1px solid;
-  margin: 0 auto;
-  padding: 5px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: static;
-  top: 5em;
-  right: 10em;
-}
 
 .btn:focus {
   color: maroon;
@@ -86,10 +85,24 @@ td {
   box-shadow: maroon;
 }
 
-.correct {
+/* .correct {
   background-color: cornflowerblue;
 }
 
 .wrong {
   background-color: red;
+} */
+
+.scoreboard {
+  position: fixed;
+  top: 0.5em;
+  right: 60em;
+  text-align: center;
+  color: rgb(184, 177, 167);
+  text-shadow: 5px 0 maroon;
+}
+
+body {
+  background-image: url(assets/horror-background-e6hzisk7ovrfydm9.jpg);
+  background-size: cover;
 }
