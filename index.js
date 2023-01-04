@@ -182,93 +182,93 @@ const questions = [
         ]
     },
     {
-        question: ' “Do you like scary movies?” is well known quote due to which film?',
+        question: 'Which serial killer inspired "The Texas Chain Saw Massacre"?',
         answers: [
-            { text: 'Scream', correct: true},
-            { text: 'Halloween', correct: false},
-            { text: 'A Nightmare on Elm Street', correct: false},
-            { text: 'Scary Movie', correct: false}
+            { text: 'Jeffrey Dahmer', correct: false},
+            { text: 'Richard Ramirez', correct: false},
+            { text: 'John Wayne Gacey', correct: false},
+            { text: 'Ed Gein', correct: true}
         ]
     },
     {
-        question: ' “Do you like scary movies?” is well known quote due to which film?',
+        question: 'What brand of doll inspired Annabelle from "The Conjuring" series?',
         answers: [
-            { text: 'Scream', correct: true},
-            { text: 'Halloween', correct: false},
-            { text: 'A Nightmare on Elm Street', correct: false},
-            { text: 'Scary Movie', correct: false}
+            { text: 'Good Guy doll', correct: false},
+            { text: 'American Girl doll', correct: false},
+            { text: 'Raggedy Ann doll', correct: true},
+            { text: 'Cabbage Patch Kids doll', correct: false}
         ]
     },
     {
-        question: ' “Do you like scary movies?” is well known quote due to which film?',
+        question: 'How many times has Beetlejuice seen "The Exorcist"?',
         answers: [
-            { text: 'Scream', correct: true},
-            { text: 'Halloween', correct: false},
-            { text: 'A Nightmare on Elm Street', correct: false},
-            { text: 'Scary Movie', correct: false}
+            { text: '7 times', correct: false},
+            { text: '59 times', correct: false},
+            { text: '167 times', correct: true},
+            { text: '666 times', correct: false}
         ]
     },
     {
-        question: ' “Do you like scary movies?” is well known quote due to which film?',
+        question: 'Which "Final Destination" movie had the premonition occur on a race track?',
         answers: [
-            { text: 'Scream', correct: true},
-            { text: 'Halloween', correct: false},
-            { text: 'A Nightmare on Elm Street', correct: false},
-            { text: 'Scary Movie', correct: false}
+            { text: 'Final Destination 4', correct: true},
+            { text: 'Final Destination 2', correct: false},
+            { text: 'Final Destination 3', correct: false},
+            { text: 'Final Destination 5', correct: false}
         ]
     },
     {
-        question: ' “Do you like scary movies?” is well known quote due to which film?',
+        question: 'What kind of animal mask do the villains in "Saw" wear? ',
         answers: [
-            { text: 'Scream', correct: true},
-            { text: 'Halloween', correct: false},
-            { text: 'A Nightmare on Elm Street', correct: false},
-            { text: 'Scary Movie', correct: false}
+            { text: 'Horse mask', correct: false},
+            { text: 'Clown mask', correct: false},
+            { text: 'Witch mask', correct: false},
+            { text: 'Pig mask', correct: true}
         ]
     },
     {
-        question: ' “Do you like scary movies?” is well known quote due to which film?',
+        question: 'What is Chucky\'s real name?',
         answers: [
-            { text: 'Scream', correct: true},
-            { text: 'Halloween', correct: false},
-            { text: 'A Nightmare on Elm Street', correct: false},
-            { text: 'Scary Movie', correct: false}
+            { text: 'Charles Hampton', correct: false},
+            { text: 'Charles Lee Ray', correct: true},
+            { text: 'Edward Jones', correct: false},
+            { text: 'Patrick Bateman', correct: false}
         ]
     },
     {
-        question: ' “Do you like scary movies?” is well known quote due to which film?',
+        question: 'What are the colors on Freddy Kreuger\'s sweater?',
         answers: [
-            { text: 'Scream', correct: true},
-            { text: 'Halloween', correct: false},
-            { text: 'A Nightmare on Elm Street', correct: false},
-            { text: 'Scary Movie', correct: false}
+            { text: 'Red/Brown', correct: false},
+            { text: 'Black/Red', correct: false},
+            { text: 'Red/Green', correct: true},
+            { text: 'Orange/Black', correct: false}
         ]
     },
     {
-        question: ' “Do you like scary movies?” is well known quote due to which film?',
+        question: 'Who released the deadly virus from "28 Days Later"?',
         answers: [
-            { text: 'Scream', correct: true},
-            { text: 'Halloween', correct: false},
-            { text: 'A Nightmare on Elm Street', correct: false},
-            { text: 'Scary Movie', correct: false}
+            { text: 'High school students', correct: false},
+            { text: 'Animal rights activists', correct: true},
+            { text: 'Scientists', correct: false},
+            { text: 'Patient Zero', correct: false}
         ]
     },
     {
-        question: ' “Do you like scary movies?” is well known quote due to which film?',
+        question: 'Who is known as the "Scream Queen"?',
         answers: [
-            { text: 'Scream', correct: true},
-            { text: 'Halloween', correct: false},
-            { text: 'A Nightmare on Elm Street', correct: false},
-            { text: 'Scary Movie', correct: false}
+            { text: 'Jenna Ortega', correct: false},
+            { text: 'Neve Campbell', correct: false},
+            { text: 'Linda Blair', correct: false},
+            { text: 'Jamie Lee Curtis', correct: true}
         ]
     },
     {
-        question: ' “Do you like scary movies?” is well known quote due to which film?',
+        question: 'Who directed the 1977 movie “The Hills have Eyes”? ',
         answers: [
-            { text: 'Scream', correct: true},
-            { text: 'Halloween', correct: false},
-            { text: 'A Nightmare on Elm Street', correct: false},
-            { text: 'Scary Movie', correct: false}
+            { text: 'George A. Romero', correct: false},
+            { text: 'John Carpenter', correct: false},
+            { text: 'Wes Craven', correct: true},
+            { text: 'Jordan Peele', correct: false}
         ]
     },
 ]
