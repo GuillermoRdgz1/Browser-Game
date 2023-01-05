@@ -33,9 +33,9 @@ function showQuestion(question) {
         const button = document.createElement('button')
         button.innerText = answer.text
         button.classList.add('btn')
-        // if (answer.correct) {
-        //     button.dataset.correct = answer.correct
-        // }
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
         button.addEventListener('click', selectResponse)
         choicesElement.appendChild(button)
     })
@@ -50,6 +50,29 @@ function resetState() {
         (choicesElement.firstChild)
     }
 }
+//scoring
+var correct = document.getElementsByClassName("correct");
+var wrong = document.getElementsByClassName("wrong");
+var score = document.getElementById("score");
+
+
+var points = 0;
+
+choicesElement.addEventListener("click", function() {
+  points += 1;
+  showPoints();
+});
+
+choicesElement.addEventListener("click", function() {
+
+  points -= 0;
+  showPoints();
+});
+
+function showPoints() {
+  score.innerHTML = points;
+}
+//scoring
 
 function selectResponse(e) {
     const chosenButton = e.target
@@ -273,26 +296,4 @@ const questions = [
     },
 ]
 
-var correct = document.getElementsByClassName("correct");
-var wrong = document.getElementsByClassName("wrong");
-var score = document.getElementById("score");
-
-
-var points = 0;
-
-choicesElement.addEventListener("click", function() {
-  
-  points += 1;
-  showPoints();
-});
-
-choicesElement.addEventListener("click", function() {
-
-  points -= 0;
-  showPoints();
-});
-
-function showPoints() {
-  score.innerHTML = points;
-}
 
