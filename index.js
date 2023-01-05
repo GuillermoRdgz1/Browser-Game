@@ -296,4 +296,3 @@ const questions = [
     },
 ]
 
-
