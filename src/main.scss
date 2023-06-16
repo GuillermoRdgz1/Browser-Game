@@ -1,0 +1,130 @@
+// Variables
+$main-font: 'Franklin Gothic Medium', 'Arial Narrow Bold', sans-serif;
+$bg-color: rgb(151, 135, 122);
+$text-color: rgb(146, 140, 140);
+$btn-border-color: black;
+$btn-focus-color: maroon;
+
+// Mixins
+@mixin btn-styling {
+  font-size: x-large;
+  align-items: center;
+  border: 3px dotted black;
+}
+
+@mixin btn-focus {
+  &:focus {
+    color: $btn-focus-color;
+    border: 2px solid $btn-focus-color;
+    box-shadow: $btn-focus-color;
+  }
+}
+
+// Functions
+@function darken-color($color, $amount) {
+  @return darken($color, $amount);
+}
+
+@function lighten-color($color, $amount) {
+  @return lighten($color, $amount);
+}
+
+// Import partial files
+@import 'buttons';
+@import 'background';
+
+
+// Error handling
+@error 'SCSS error handling';
+
+// Styles
+* {
+  font-family: $main-font;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  margin: 2;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: $bg-color;
+  height: 50em;
+  font-family: $main-font;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: 10px;
+  gap: 10px;
+}
+
+#question {
+  font-size: xx-large;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  color: $text-color;
+  text-shadow: 2.5px 0 rgb(146, 36, 36);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#choices {
+  height: auto;
+  width: auto;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.btn {
+  @include btn-styling;
+}
+
+.start-btn {
+  border: none;
+  color: rgb(44, 43, 43);
+  padding: 25px, 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100px;
+  margin: 5px;
+  border: 3px solid black;
+  text-shadow: 1px 0 maroon;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(226, 226, 226);
+}
+
+.next-btn {
+  border: none;
+  color: rgb(128, 19, 19);
+  padding: 25px, 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 5px;
+  height: auto;
+  width: auto;
+  border: 2.5px solid black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  @include btn-focus;
+}
+
+.scoreboard {
+  position: fixed;
+  top: 0.5em;
+  right: 60em;
+  text-align: center;
+  color: rgb(184, 177, 167);
+  text-shadow: 5px 0 maroon;
+}
+
+body {
+  background-image: url(assets/horror-background-e6hzisk7ovrfydm9.jpg);
+  background-size: cover;
+}
